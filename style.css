@@ -164,7 +164,7 @@ main {
     position: absolute;
     width: 100%;
     z-index: -1;
-
+    overflow: hidden;
 }
 
 .bg-2 {
@@ -318,7 +318,7 @@ main {
 .slider-item {
     flex-shrink: 0;
     width: 90%;
-    margin: 2em 5% 0;
+    margin: 2.2em 5% 0;
     background: var(--light-gray);
     border-radius: 10px;
     position: relative;
