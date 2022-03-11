@@ -53,7 +53,7 @@ a {
 
 .bg {
     position: relative;
-    left: 20%;
+    left: 10%;
     bottom: 50px;
 }
 
@@ -536,7 +536,7 @@ form input:focus {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 50px;
+        padding: 40px 50px;
     }
 
     header .btn {
@@ -545,7 +545,7 @@ form input:focus {
     }
 
     .bg-container {
-        width: 40%;
+        width: 50%;
         right: 0;
         left: unset;
         top: 0;
@@ -618,7 +618,7 @@ form input:focus {
     }
 
     .feedback {
-        margin: 5em 0 3em;
+        margin: 7em 0;
     }
 
     .slider-btn {
@@ -692,7 +692,7 @@ form input:focus {
 
 @media (min-width: 1200px) {
     header {
-        padding: 20px 100px;
+        padding: 40px 100px;
     }
 
     .hero {
