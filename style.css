@@ -34,7 +34,6 @@ h4 {
 
 body {
     position: relative;
-    overflow-x: hidden;
 }
 
 button,
@@ -43,12 +42,12 @@ a {
 }
 
 .bg-container {
+    overflow: hidden;
     position: absolute;
     width: 100%;
     height: auto;
     top: 0;
     left: 0;
-    overflow: hidden;
     z-index: -1;
 }
 
@@ -159,18 +158,18 @@ main {
 }
 
 .bg-container-2 {
+    overflow: hidden;
     right: 0;
-    top: 300px;
+    top: 350px;
     position: absolute;
     width: 100%;
     z-index: -1;
-    overflow: hidden;
 }
 
 .bg-2 {
-    position: absolute;
+    position: relative;
     width: 80%;
-    right: -40%;
+    right: -50%;
 }
 
 .hero-img {
@@ -255,9 +254,9 @@ main {
 
 .container span {
     background: var(--bright-red);
-    padding: 5px 5px;
+    padding: 8px 5px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     color: white;
     width: 100%;
     position: relative;
@@ -297,7 +296,6 @@ main {
 
 .feedback {
     text-align: center;
-    /* overflow-x: hidden; */
     margin-bottom: 3em;
 }
 
