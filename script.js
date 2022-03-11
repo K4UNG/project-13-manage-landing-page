@@ -33,3 +33,42 @@ function removeColor() {
         button.classList.remove('active');
     })
 }
+
+window.onresize = () => {
+    if (document.body.clientWidth >= 760) {
+        cross.style.display = 'none';
+        nav.classList.remove('shown');
+    } else {
+        if (menu.style.display === 'none') {
+            cross.style.display = 'unset';
+            nav.classList.add('shown');
+        }
+    }
+}
+
+const form = document.querySelector('.footer-bot form');
+const expression = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+const msg = document.querySelector('.msg');
+const input = document.querySelector('.footer-bot input');
+
+form.onsubmit = () => {
+    const mail = document.querySelector('.footer-bot input').value;
+    if (mail.match(expression)) {
+        msg.textContent = 'Success';
+        msg.style.color = 'green';
+        input.style['border-color'] = 'greenyellow';
+        input.style.color = 'green';
+    } else {
+        msg.textContent = 'Please insert a valid email';
+        msg.style.color = 'red';
+        input.style['border-color'] = 'red';
+        input.style.color = 'red';
+    }
+    return false;
+}
+
+input.addEventListener('keydown', () => {
+    msg.textContent = '';
+    input.style.color = 'var(--dark-gray-blue)';
+    input.style['border-color'] = 'var(--very-dark-blue)';
+})

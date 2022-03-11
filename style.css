@@ -405,6 +405,16 @@ footer {
     display: flex;
     padding: 2em 0 0;
     gap: 1em;
+    position: relative;
+}
+
+.msg {
+    position: absolute;
+    color: red;
+    top: calc(100% + 3px);
+    left: 20px;
+    font-size: .7125rem;
+    font-style: italic;
 }
 
 form input {
@@ -413,6 +423,10 @@ form input {
     padding: 0 2em;
     color: var(--dark-gray-blue);
     border: 2px solid var(--very-dark-blue);
+}
+
+form input:focus {
+    outline: none;
 }
 
 .footer-bot .btn {
@@ -473,12 +487,20 @@ form input {
     padding-bottom: 1em;
 }
 
+.footer-bot .btn:hover {
+    opacity: 1;
+}
+
 .attribution {
     background: var(--very-dark-blue);
     color: var(--dark-gray-blue);
 }
 
 @media (min-width: 760px) {
+    .filter {
+        display: none;
+    }
+    
     nav {
         display: block;
         background: transparent;
@@ -514,7 +536,7 @@ form input {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 80px;
+        padding: 20px 50px;
     }
 
     header .btn {
@@ -533,7 +555,7 @@ form input {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        padding: 2em 0 2em 80px;
+        padding: 2em 0 2em 50px;
     }
 
     .hero-img {
@@ -554,7 +576,7 @@ form input {
     .about {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 20px 80px;
+        padding: 20px 50px;
     }
 
     .about-left {
@@ -625,13 +647,23 @@ form input {
     .footer-top {
         background-image: url(images/bg-simplify-section-desktop.svg);
         background-position-x: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 50px;
     }
+
+    .footer-top h2 {
+        width: 50%;
+        text-align: left;
+    }
+
 
     .footer-bot {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
-        padding: 0 80px;
+        padding: 0 50px;
     }
 
     .footer-logo {
@@ -651,5 +683,27 @@ form input {
 
     .footer-bot p {
         align-self: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 20px 100px;
+    }
+
+    .hero {
+        padding: 2em 0 2em 100px;
+    }
+
+    .about {
+        padding: 20px 100px;
+    }
+
+    .footer-top {
+        padding: 3em 150px;
+    }
+
+    .footer-bot {
+        padding: 0 100px;
     }
 }
