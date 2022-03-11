@@ -545,7 +545,7 @@ form input:focus {
     }
 
     .bg-container {
-        width: 50%;
+        width: 40%;
         right: 0;
         left: unset;
         top: 0;
@@ -614,7 +614,11 @@ form input:focus {
         transform: rotate(180deg);
         left: -50px;
         right: unset;
-        top: 30%;
+        top: 40%;
+    }
+
+    .feedback {
+        margin: 5em 0 3em;
     }
 
     .slider-btn {
